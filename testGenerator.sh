@@ -1,6 +1,11 @@
 #!/bin/bash
 
-# This is a script to generate test case file for the project NAINA
+####################################################################
+# This is a script to generate test case file for the project NAINA#
+# Version: 0.1						   	   #
+# Author: Sumeet Garnaik					   #
+# 2014								   #
+####################################################################
 FILE=$1
 
 f=$(basename $FILE)
