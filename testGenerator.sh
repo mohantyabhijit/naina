@@ -21,7 +21,8 @@ then
 	printf "\tpfin = fopen(\"./%s.in\", \"r\");\n" "$fn" >> $f
 	printf "\tpfout = fopen(\"./%s.out\", \"r\");\n" "$fn" >> $f
 	printf "\tpftmp = fopen(\"./%s.tmp\", \"w+\");\n" "$fn" >> $f
-	printf "\tmemset(tmpOut, '\\0', MAXSIZE);\n" >> $f
+	printf "\tmemset(tmpOut, '\\" >> $f
+	printf "0', MAXSIZE);\n" >> $f
 	printf "\tfor (loop=0;loop<MAXCASE;loop++)\n\t{\n" >> $f
 	printf "\t\tgetline(&tmpIn, &length, pfin);\n" >> $f
 	printf "\t\t//Invoke the function and store the value returned in the array tmpOut\n" >> $f
